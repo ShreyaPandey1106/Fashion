@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.block{
+    display: none;
+}
+h1{
+    font-weight:900;
+    font-size: 50px;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.main{
+    background-color: white;
+    border-radius: 2%;
+    padding: 4%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.right{
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right a{
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(65, 64, 64);
+}
+.explore{
+    background-color: #F4F6F5;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.explore img{
+    height: 80vh;
+}
+.text{
+    width: 35%;
+}
+.text h1{
+    position: relative; 
+    width: max-content;
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 69%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 69%, 0 100%);
+}
+.yellow{
+    background-color: #E6C744;
+}
+.white{
+    background-color: white;
+}
+
+/* Icons */
+.icons{
+    background-color: #E6C744;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5% 2% 5%;
+}
+
+.icons img{
+    height: 50px;
+}
+/* New arrivals */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.box1{
+    width: 33%;
+}
+.box1 img{
+    /* border: 2px solid red; */
+     height: 350px;
+     width: 100%;
+}
+.box1 p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* sale page */
+.advertise{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sale{
+    background-color: #F3D94E;
+}
+
+/* Young page */
+.young{
+    padding: 2% 5% 2% 5%;
+}
+.young h1{
+    font-size: xx-large;
+    position: relative;
+    width: max-content;
+}
+.young h1::before{
+    width: 100px;
+    height: 100px;
+    content:' ';
+    display: block;
+    background-color: #E6C744;
+    clip-path: polygon(42% 74%, 69% 70%, 68% 70%, 90% 75%, 65% 90%, 31% 96%, 0 93%, 21% 82%);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    opacity: 0.6;
+}
+.box2{
+    width: 48%;
+}
+/* Download */
+
+.download {
+    padding: 5%;
+    width: 50%;
+}
+.download img{
+    height: 30px;
+}
+/* Footer */
+.footer{
+    margin-top: 3%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+}
+.footer-list a{
+    text-decoration: none;
+    color: white;
+}
+@media(max-width:768px){
+    .none{
+       display: none;
+    }
+    .block{
+        display: block;
+    }
+    body{
+        padding: 0;
+    }
+    .mimg{
+        height: 10px;
+    }
+    .main{
+        padding: 0%;
+        border-radius: 0%;
+    }
+    .text{
+        width: 100%;
+        padding: 0%;
+        text-align: center;
+        margin: 10% 0% 10% 0%;
+    }
+    .text h1{
+        width: 100%;
+    }
+    .box1{
+        width: 100%;
+    }
+    .sale{
+        width: 100%;
+    }
+    .download{
+        width: 100%;
+        text-align: center;
+    }
+}
